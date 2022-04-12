@@ -12,11 +12,11 @@ function App() {
 
   return (
     <div className="App">
-        <Main page={page} setPage={setPage} />
-        <About />
-        <Skillz />
-        <Work />
-        <Contact />
+      <Main page={page} setPage={setPage} />
+      <About />
+      <Skillz />
+      <Work />
+      <Contact />
         
     </div>
   );

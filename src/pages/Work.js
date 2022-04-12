@@ -2,8 +2,9 @@
 function Work () {
 
     return (
-        <div className="Work">
-            Work
+        <div className="Work page">
+            <p>Work</p>
+
         </div>
     )
 }

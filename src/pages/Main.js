@@ -1,13 +1,19 @@
-
+import { useEffect, useState } from 'react'
 
 
 function Main ({page, setPage}) {
+    const [css, setCss] = useState('pageSelect')
 
+    useEffect(()=>{
+        page === "main" && setCss('main')
+    }, [page])
+    
     return (
-        <div className="Main" onClick={()=>setPage("main")}>
+        <div className={css} onClick={()=>setPage("main")}>
+            <p>Main</p>
             {
             page === "main" 
-            ?
+            &&
             <div>
                 <h1>  Julio </h1>  
                 <p> software developer </p>
@@ -16,11 +22,7 @@ function Main ({page, setPage}) {
                     Express | Node.js | Git | GitHub | Heroku | Netlify | Word | Excel | PowerPoint | Adobe Illustrator | Figma | Bubble 
                 </p>
             </div>
-            :
-            <p>Main</p>
             }
-            
-            
         </div>
     )
 }

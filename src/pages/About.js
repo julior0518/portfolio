@@ -2,8 +2,8 @@
 function About () {
 
     return (
-        <div className="About">
-            Aboutasdasdsd
+        <div className="About page">
+            <p>About</p>
         </div>
     )
 }
